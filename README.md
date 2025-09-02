@@ -10,7 +10,7 @@ L’OCR (reconnaissance de texte) est réalisé grâce à l’API Google Cloud V
 ## Fonctionnalités
 
 - Sélection d’un fichier PDF via une interface graphique simple (Tkinter)  
-- Conversion du PDF en images haute qualité avec Poppler  
+- Conversion du PDF en images avec Poppler  
 - Lecture du texte par Google Cloud Vision API  
 - Extraction du numéro de facture et du montant TTC  
 - Sauvegarde automatique dans un fichier Excel avec `openpyxl`  
@@ -32,5 +32,5 @@ pip install google-cloud-vision pdf2image pillow openpyxl
 
 Dans le script Python, configurez les chemins :
 poppler_path = r"C:\poppler\Library\bin"
-cle_google = r"C:\Users\comptabilite\Documents\vision.json"
+cle_google = r"votre chemin"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = cle_google
